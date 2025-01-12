@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Trondheim Science Museum" content="Official webpage of our newly opened science museum in Trondheim, Norway">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trondheim Science Museum | Home</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+    <section class="header">
+        <nav>
+            <a href="Index.html"><img src="Images/logo.png"></a>
+              <div class="nav-links">   
+                 <ul>
+                     <li class="nav-hide"><a href="index.html">HOME</a> </li>
+                     <li class="nav-hide"><a href="explore.html">EXPLORE</a> </li>
+                     <li class="nav-hide"><a href="gallery.html">GALLERY</a> </li>
+                     <li class="nav-hide"><a href="about-us.html">ABOUT US</a> </li>
+                     <li class="nav-hide"><a href="contact.html">CONTACT</a> </li>
+                     <li class="nav-hide"><a href="tickets.html">BOOKING</a> </li>
+                     <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+                  </ul>
+                  <ul class="sidebar">
+                     <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> </li>
+                     <li><a href="index.html">HOME</a> </li>
+                     <li><a href="explore.html">EXPLORE</a> </li>
+                     <li><a href="gallery.html">GALLERY</a> </li>
+                     <li><a href="about-us.html">ABOUT US</a> </li>
+                     <li><a href="contact.html">CONTACT</a> </li>
+                     <li><a href="tickets.html">BOOKING</a> </li>
+                  </ul>
+              </div>
+        </nav> 
+        
+      <div class="text-box">
+        <h1>Explore together</h1>
+        <p>Let us take you on a scientific journey through our new and creative science museum,<br> a place of wonder, joy and interactive learning.</p>
+        <a href="explore.html" class="hero-button">Click to see more</a>
+      </div> 
+    </section>
+   </header>
+    
+    
+    
+    
+    
+ <main>   
+<!-----tours---->
+    
+    <section class="tours">
+        <h1>Special Events</h1>
+        <p>We offer a several different Special events and exhibitions ranging from lectures to limited time attractions.</p>
+        
+        <div class="row">
+            <div class="tours-column box">
+                <h3>Visiting Professor of Aeronautics</h3>
+                <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future<br> lies in this exciting ‘space’.</p>
+            </div>
+            <div class="tours-column box">
+                <h3>Night in the Museum</h3>
+                <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science. </p>
+            </div>
+            <div class="tours-column box">
+                <h3>Energeticas Exhibition on Loan</h3>
+                <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+            </div>
+        </div>
+    </section>
+    
+     
+<!----- attractions ----->
+    
+    <section class="attractions">
+        <h1>Attractions</h1>
+        <p> Here at our new community science museum we offer a variety of new, creative and<br> cutting edge attractions and displays to both educate and amaze our visitors.</p>
+        
+        <div class="row">
+            <div class="attractions-column">
+                <img src="Images/heart-2607178_1920.jpg" alt="Detailed anatomical heart in a showcase">
+            </div>
+            <div class="attractions-column">
+                <img src="Images/mammoth-1257288_1920.jpg" alt="Mammoth skeleton bone model 1 to 1 scale">
+            </div>
+            <div class="attractions-column">
+                <img src="Images/scientific-2040795_1280.jpg" alt="woman working on a large robotic cyllindrical machine">
+            </div>
+        </div>
+    </section>
+ </main>
+    
+    
+<!---- JavaScript for toggle menu ---->
+    
+<script>
+    
+   function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+   }
+   function hideSidebar(){
+       const sidebar = document.querySelector('.sidebar')
+       sidebar.style.display = 'none'
+   }
+</script>
+    
+    
+<!----- footer ----->
+    
+    <footer>
+       <section class="footer">
+         <h4>Contact Us</h4>
+         <p>+47 000 00 000 <br>CSM@trondheim.com</p>
+       </section>
+    </footer>
+
+    
+</body>
+</html>
