@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn more about our community science museum and why we decided to create it">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trondheim Science Museum | About Us</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+    <section class="sub-header">
+        <nav>
+            <a href="Index.html"><img src="Images/logo.png"></a>
+              <div class="nav-links">   
+                 <ul>
+                     <li class="nav-hide"><a href="Index.html">HOME</a> </li>
+                     <li class="nav-hide"><a href="Explore.html">EXPLORE</a> </li>
+                     <li class="nav-hide"><a href="Gallery.html">GALLERY</a> </li>
+                     <li class="nav-hide"><a href="About-us.html">ABOUT US</a> </li>
+                     <li class="nav-hide"><a href="Contact.html">CONTACT</a> </li>
+                     <li class="nav-hide"><a href="Tickets.html">BOOKING</a> </li>
+                     <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+                  </ul>
+                  <ul class="sidebar">
+                     <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> </li>
+                     <li><a href="Index.html">HOME</a> </li>
+                     <li><a href="Explore.html">EXPLORE</a> </li>
+                     <li><a href="Gallery.html">GALLERY</a> </li>
+                     <li><a href="About-us.html">ABOUT US</a> </li>
+                     <li><a href="Contact.html">CONTACT</a> </li>
+                     <li><a href="Tickets.html">BOOKING</a> </li>
+                  </ul>
+              </div>
+        </nav> 
+      <h1>About Us</h1>
+    </section>
+   </header>
+    
+    
+ <main>   
+    <!----- about us ----->
+    
+    <section class="about-us"> 
+        <div class="row">
+            <div class="about-column">
+                <h1>Trondheim Community Science Museum</h1>
+                <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
+                <a href="Contact.html" class="hero-button blue-button">CONTACT US</a>
+            </div>
+            <div class="about-column">
+                <img src="Images/scott-webb-102825.jpg" alt="wall with many different colored with the word Museum portruding">
+            </div>
+        </div>
+    </section>
+    
+     
+     <section class="tours get-involved">
+        <h1>Get Involved</h1>
+        
+        
+        <div class="row">
+            <div class="tours-column">
+                <h3>Support</h3>
+                <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
+            </div>
+            <div class="tours-column">
+                <h3>Volunteer</h3>
+                <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum. You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.</p>
+            </div>
+            <div class="tours-column">
+                <h3>Internships</h3>
+                <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum. You’ll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.</p>
+            </div>
+        </div>
+    </section>
+ </main>
+
+       
+<!---- JavaScript for toggle menu ---->
+    
+<script>
+    
+   function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+   }
+   function hideSidebar(){
+       const sidebar = document.querySelector('.sidebar')
+       sidebar.style.display = 'none'
+   }
+</script>
+    
+    
+<!----- footer ----->
+    <footer>
+       <section class="footer">
+         <h4>Contact Us</h4>
+         <p>+47 000 00 000 <br>CSM@trondheim.com</p>
+       </section>
+    </footer>
+
+    
+</body>
+</html>
