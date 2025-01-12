@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="take a look at a preview of some of our attractions that we have to offer here at the Trondheim Community Science Museum">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trondheim Science Museum | Gallery</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+    <section class="sub-header">
+        <nav>
+            <a href="Index.html"><img src="Images/logo.png"></a>
+              <div class="nav-links">   
+                 <ul>
+                     <li class="nav-hide"><a href="index.html">HOME</a> </li>
+                     <li class="nav-hide"><a href="explore.html">EXPLORE</a> </li>
+                     <li class="nav-hide"><a href="gallery.html">GALLERY</a> </li>
+                     <li class="nav-hide"><a href="about-us.html">ABOUT US</a> </li>
+                     <li class="nav-hide"><a href="contact.html">CONTACT</a> </li>
+                     <li class="nav-hide"><a href="tickets.html">BOOKING</a> </li>
+                     <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+                  </ul>
+                  <ul class="sidebar">
+                     <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> </li>
+                     <li><a href="index.html">HOME</a> </li>
+                     <li><a href="explore.html">EXPLORE</a> </li>
+                     <li><a href="gallery.html">GALLERY</a> </li>
+                     <li><a href="about-us.html">ABOUT US</a> </li>
+                     <li><a href="contact.html">CONTACT</a> </li>
+                     <li><a href="tickets.html">BOOKING</a> </li>
+                  </ul>
+              </div>
+        </nav> 
+      <h1>Gallery</h1>
+    </section>
+   </header>
+    
+    
+ <main>   
+    <!----- gallery ----->
+    
+    <section class="gallery">
+        
+        <div class="row">
+            <div class="gallery-column">
+                <img src="Images/heart-2607178_1920.jpg" alt="anatomically correct model of a heart in a showcase">
+            </div>
+            <div class="gallery-column">
+                <img src="Images/mammoth-1257288_1920.jpg" alt="Mammoth skeleton bone model 1 to 1 scale">
+            </div>
+            <div class="gallery-column">
+                <img src="Images/scientific-2040795_1280.jpg" alt="woman working on a large robotic cyllindrical machine">
+            </div>
+        </div>
+        
+        <div class="row-2">
+            <div class="gallery-column">
+                <img src="Images/roberto-nickson-396152.jpg" alt="Large decagonal room with castle-like walls, high ceilings and an elephant statue on one side ">
+            </div>
+            <div class="gallery-column">
+                <img src="Images/samuel-zeller-113381.jpg" alt="anatomical model of the human muscles blood vessels and bones from the torso to the head">
+            </div>
+            <div class="gallery-column">
+                <img src="Images/luke-ellis-craven-400722.jpg" alt="large circular room with high ceilings and spherical white roof, a man with a red jacket looking forward">
+            </div>
+        </div>
+        
+        <div class="row-3">
+            <div class="gallery-column2">
+                <img src="Images/genoa-956405_1920.jpg" alt="large recreation of two ants facing eachother on a wooden pedestal">
+            </div>
+            <div class="gallery-column">
+                <img src="Images/jesse-orrico-60373.jpg" alt="anantomically accurate model of the skull in a showcase, with see through bones, making the brain and blood vessels visible">
+            </div>
+            <div class="gallery-column">
+                <img src="Images/skeleton-414543_1920.jpg" alt="Life size keleton models showcasing human evolution">
+            </div>
+        </div>
+    </section>
+</main>
+    
+     
+<!---- JavaScript for toggle menu ---->
+    
+<script>
+    
+   function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+   }
+   function hideSidebar(){
+       const sidebar = document.querySelector('.sidebar')
+       sidebar.style.display = 'none'
+   }
+</script>
+    
+    
+<!----- footer ----->
+    
+    <footer>
+       <section class="footer">
+         <h4>Contact Us</h4>
+         <p>+47 000 00 000 <br>CSM@trondheim.com</p>
+       </section>
+    </footer>
+
+    
+</body>
+</html>
