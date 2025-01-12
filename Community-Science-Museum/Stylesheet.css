@@ -1,0 +1,487 @@
+{}
+
+
+
+/*------ General Text ------*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    }
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+
+/*------ Header ------*/
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/exhibition-1863344_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/*------ Navigation for homepage ------*/
+
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 75px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00b9ff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+.sidebar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 100vh;
+    z-index: 999;
+    background-color: #222222;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button svg{
+    display: none;
+}
+
+
+/*------ Navigation for all other pages ------*/
+
+.nav2{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/mavis-cw-164128.jpg); 
+}
+
+.nav2 img{
+    width: 75px;
+}
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/mavis-cw-164128.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    margin-top: 100px
+}
+
+
+
+/*------ Homepage ------*/
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-button:hover{
+    border: 1px solid ;
+    background: #00b9ff;
+    transition: 1s;
+}
+
+nav .Menu{
+    display: none;
+}
+
+.nav-links ul{
+    padding: 30px;
+}
+
+
+
+/*------ Explore ------*/
+
+.tours{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.tours h1{
+    padding-top: 50px;
+}
+
+.tours p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tours-column{
+    flex-basis: 31%;
+    background-color: #a5efff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.box{
+    border: 1px solid;
+    background: transparent;
+    border-radius: 10;
+}
+
+
+
+/*------ attractions ------*/
+
+.attractions{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.attractions h1{
+    padding-top: 100px;
+}
+
+.attractions p{
+   padding-bottom: 25px;
+    
+}
+
+.attractions-column{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: visible;
+}
+
+.attractions-column img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;  
+}
+
+.attractions-column-2{
+    flex-basis: 60%;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    }
+
+.attractions-column-2 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+
+/*------ gallery ------*/
+
+.gallery{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gallery h1{
+    padding-top: 50px;
+    font-size: 36px;
+    }
+
+.gallery-column{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: visible;
+}
+
+.gallery-column2{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: visible;
+    }
+
+.gallery-column img{
+    max-width: 100%;
+    max-height: 900px;
+    border-radius: 15px;
+    }
+
+.gallery-column2 img{
+    max-width: 100%;
+    max-height: 435px;
+    border-radius: 15px;
+    }
+
+.row-2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.row-3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*------ about us ------*/
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-column{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-column img{
+    width: 100%;
+    
+}
+
+.about-column h1{
+    padding-top: 0;
+}
+
+.about-column p{
+    padding: 15px 0 25px;
+}
+
+.blue-button{
+    border: 1px solid #00b9ff;
+    background: transparent;
+    color: #00b9ff;
+}
+
+.blue-button:hover{
+    color: #fff;
+}
+
+get-involved{
+    padding-top: 0px;
+}
+
+
+
+/*------ contact us ------*/
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.contact-column{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-column div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-column div p{
+    padding: 0; 
+}
+
+.contact-column div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-column input, .contact-column textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+
+
+/*------ footer ------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer-2{
+    padding-top: 500px
+}
+
+
+
+/*------ media query ------*/
+
+@media(max-width: 1000px){
+    .nav-hide a{
+        display: none;    
+    }
+    
+    .text-box h1{
+        font-size: 20px;
+    }
+    
+    .menu-button svg{
+        display: block;
+    }
+   
+    
+    .row{
+        flex-direction: column;
+    }
+    
+    .row-2{
+        flex-direction: column;
+    }
+    
+    .row-3{
+        flex-direction: column;
+    }
+    
+    .gallery h1{
+        padding-bottom: 70px
+    }
+    
+    
+}
